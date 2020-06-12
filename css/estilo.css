@@ -1,0 +1,992 @@
+* {
+  box-sizing: border-box;
+}
+  html,body{
+  	background-image: linear-gradient(#000, #010c1c, #02122b, #022453, #022b64, #02357c, #02367f, #022b64, #02122b, #010c1c);
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: futura, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+  }
+  h1 {
+    font-family: futura, sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+  h2 {
+    font-family: futura, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
+  .modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+  }
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+  .container{
+  	padding-left: 10px;
+  	padding-right: 10px;
+  }
+  .container2{
+  	padding-left: 50px;
+  	padding-right: 50px;
+  }
+  .imagens img{
+    border-radius: 3px;
+
+    /* Image border */
+    border: 4px solid white;
+  }
+  #menu{
+   background: #000;
+   border:0;
+   padding-top: 15px;
+   padding-bottom: 15px;
+ }
+ #menu a{
+   color: #fff;
+ }
+ #menu a:hover{
+   color: #102090;
+ }
+ #logo{
+  margin-top: -16px;
+}
+#banner{
+	margin-top: 55px;
+	background-image: url("../img/banner.jpg");
+ background-attachment: fixed;
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ width: 100%;
+ height: 600px;
+}
+#banner img{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 145px;
+}
+#sobre img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 200px;
+  border: 4px solid white;
+}
+#sobre{
+  text-align: center;
+  background-image: url("../img/bg-sobre.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 95% 95%;
+  display: block;
+}
+#sobre p{
+	padding-left: 70px;
+	padding-right: 70px;
+	text-align: center;
+  font-size: 17px;
+}
+#parallaxGameCima{
+  display: block;
+	margin-top: 40px;
+	margin-bottom: -19px;
+}
+#parallaxGameCimaMobile{
+  display: none;
+}
+#devGames{
+	text-align:center;
+	background-image: url("../img/parallax.jpg");
+	background-attachment: fixed;
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ width: 100%;
+ height: 500px;
+}
+#devGames h1{
+	margin-top: 220px;
+	
+}
+#parallaxGameBaixo{
+  display:block;
+	margin-bottom: 40px;
+	margin-top: -22px;
+	text-align: right;
+}
+#parallaxGameBaixoMobile{
+  display:none;
+}
+.titulo{
+	text-align: center;
+	background-image: url("../img/bg-titulogame.png");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ margin-top: 40px;
+}
+.conteudoGames{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#devFrontEnd{
+	text-align:center;
+	background-image: url("../img/parallax.jpg");
+	background-attachment: fixed;
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ width: 100%;
+ height: 500px;
+}
+#devFrontEnd h1{
+	margin-top: 220px;
+	
+}
+#parallaxDevCima{
+  display: block;
+  margin-top: 40px;
+  margin-bottom: -70px;
+}
+#parallaxDevBaixo{
+  display: block;
+	margin-bottom: 40px;
+	margin-top: -71px;
+	text-align: right;
+}
+#parallaxDevCimaMobile{
+  display: none;
+}
+#parallaxDevBaixoMobile{
+  display: none;
+}
+.tituloDev{
+	text-align: center;
+	background-image: url("../img/bg-titulodev.png");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+}
+.titulo h1{
+  margin-bottom: 15px;
+}
+.tituloDev h1{
+	margin-top: -2px;
+}
+.conteudoDev{
+	margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.conteudoDev h2{
+
+  font-size: 18px;
+}
+.descricaoDev{
+  margin-bottom: 30px;
+}
+.conteudoGames a{
+	color: black;
+	font-weight: 900;
+  text-decoration: none;
+  transition: 0.6s ease;
+}
+.conteudoGames a:hover{
+  color: white;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.conteudoGames h2{
+
+  font-size: 16px;
+}
+.descricaoGames{
+  margin-bottom: 30px;
+}
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+  border-radius: 3px;
+  border: 4px solid white;
+  width: 98%;
+  margin-left: 2px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+  border-radius: 3px;
+  border: 4px solid white;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.hover-shadow{
+	padding: 10px;
+}
+
+.container3 img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container3 {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides2 {
+  display: none;
+}
+
+
+/* Next & previous buttons */
+.prev2,
+.next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover,
+.next2:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext2 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container2 {
+  text-align: center;
+  background-color: #222;
+  padding: 5px;
+  color: white;
+}
+
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column2 {
+  float: left;
+  width: 12.50%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo2 {
+  opacity: 0.6;
+  padding: 10px;
+}
+
+.active2,
+.demo2:hover {
+  opacity: 1;
+  border-radius: 3px;
+  border: 4px solid white;
+}
+.sites{
+  padding: 10px;
+  margin-left: 30px;
+}
+.sites img{
+  padding: 40px;
+  width: 220px;
+}
+.mubs{
+  padding: 10px;
+  margin-left: 30px;
+}
+.mubs img{
+  padding: 40px;
+  width: 400px;
+}
+.war img{
+  padding: 10px;
+}
+.war h2{
+  margin-top: 30px;
+}
+.ilha img{
+  padding: 10px;
+}
+.ilha h2{
+  margin-top: 30px;
+}
+.ford img{
+  padding: 10px;
+}
+.ford h2{
+  margin-top: 30px;
+}
+.fotosJogos{
+  margin-left: 50px;
+}
+#rodape{
+	background: #000;
+	color: #fff;
+	padding: 20px 0;
+}
+.iconeSocial{
+	width: 40px;
+	transition: filter 0.5s ease;
+}
+.iconeSocial:hover{
+	filter:brightness(170%);
+}
+
+@media screen and (max-width: 768px){
+  img{
+    max-width: 100%;
+  }
+  .column {
+    width: 100%;
+  }
+  .column2 {
+    width: 100%;
+  }
+  .imagens img{
+    border-radius: 3px;
+
+    /* Image border */
+    border: 4px solid white;
+  }
+   #menu{
+   background: #000;
+   border:0;
+   padding-top: 15px;
+   padding-bottom: 15px;
+ }
+ #menu a{
+   color: #fff;
+ }
+ #menu a:hover{
+   color: #102090;
+ }
+ #logo{
+ 
+}
+ html,body{
+    background-image: linear-gradient(#000, #010c1c, #02122b, #022453, #022b64, #02357c, #02367f, #022b64, #02122b, #010c1c);
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: futura, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+  }
+  h1 {
+    font-family: futura, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+  }
+  h2 {
+    font-family: futura, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+  }
+  p{
+    font-size: 12px;
+    color: white;
+  }
+  .container2{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .container2{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  #rodape{
+  background: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+#banner{
+  margin-top: 55px;
+  background-image: url("../img/banner.jpg");
+ background-attachment: fixed;
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ width: 100%;
+ height: 500px;
+}
+#banner img{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 145px;
+}
+#sobre img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 200px;
+  border: 4px solid white;
+}
+#sobre{
+  text-align: center;
+  background-image: url("../img/bg-sobre.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 0;
+  display: block;
+}
+#sobre p{
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  font-size: 17px;
+}
+#sobre h1{
+  font-size: 25px;
+}
+.titulo{
+  text-align: center;
+  background-image: url("../img/bg-titulogame-mobile.png");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ margin-top: 40px;
+}
+.tituloDev{
+  text-align: center;
+  background-image: url("../img/bg-titulodev-mobile.png");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+}
+
+#devGames{
+  text-align:center;
+  background-image: url("../img/parallax.jpg");
+  background-attachment: fixed;
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ width: 100%;
+ height: 300px;
+}
+#devGames h1{
+  margin-top: 120px;
+  
+}
+#parallaxGameBaixo{
+  display:none;
+
+}
+#parallaxGameCima{
+  display:none;
+}
+#parallaxGameBaixoMobile{
+  display: block;
+  margin-bottom: 40px;
+  margin-top: -14px;
+  text-align: right;
+}
+#parallaxGameCimaMobile{
+  display: block;
+  margin-top: 40px;
+  margin-bottom: -5px;
+}
+#devWeb{
+  text-align:center;
+  background-image: url("../img/parallax.jpg");
+  background-attachment: fixed;
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ width: 100%;
+ height: 300px;
+}
+#devWeb h1{
+  margin-top: 120px;
+  
+}
+#parallaxDevCimaMobile{
+  display: block;
+  margin-top: 40px;
+  margin-bottom: -25px;
+}
+#parallaxDevBaixoMobile{
+  display: block;
+  margin-bottom: 40px;
+  margin-top: -30px;
+  text-align: right;
+}
+#parallaxDevCima{
+  display: none;
+}
+#parallaxDevBaixo{
+  display: none;
+}
+.iconeSocial{
+  width: 40px;
+  transition: filter 0.5s ease;
+}
+.iconeSocial:hover{
+  filter:brightness(170%);
+}
+.sites img{
+  padding: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+.mubs img{
+  padding: 30px;
+  display: block;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+.fotosJogos{
+  margin-left: 0;
+}
+#rodape{
+  background: #000;
+  color: #fff;
+  padding-top: 10px;
+}
+#rodape p{
+  padding-top: 15px;
+}
+#rodape a{
+  text-decoration: none;
+  color: white;
+}
+#rodape a:hover{
+  color: #02357c;
+}
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 20px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+  border-radius: 3px;
+  border: 2px solid white;
+  width: 100%;
+  margin-left: 2px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+  border-radius: 3px;
+  border: 2px solid white;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.hover-shadow{
+  padding: 1px;
+}
+
+.container3 img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container3 {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides2 {
+  display: none;
+}
+
+
+/* Next & previous buttons */
+.prev2,
+.next2 {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+
+}
+
+/* Position the "next button" to the right */
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover,
+.next2:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext2 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container2 {
+  text-align: center;
+  background-color: #222;
+  padding: 5px;
+  color: white;
+}
+
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column2 {
+  float: left;
+  width: 25%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo2 {
+  opacity: 0.6;
+  padding: 0px;
+}
+.row2 img{
+  margin-top: 3px;
+}
+.active2,
+.demo2:hover {
+  opacity: 1;
+  border-radius: 2px;
+  border: 2px solid white;
+}
+.amatiti img{
+  margin-top: 20px;
+  padding: 0px;
+}
+.war img{
+  margin-top: 20px;
+  padding: 0px;
+}
+.ilha img{
+  margin-top: 20px;
+  padding: 0px;
+}
+.ford img{
+  margin-top: 20px;
+  padding: 0px;
+}
+.imagens img{
+    border-radius: 3px;
+
+    /* Image border */
+    border: 2px solid white;
+  }
+}
